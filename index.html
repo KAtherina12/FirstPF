@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.header{
+  padding-top: 30px;
+  padding-left: 50em;
+  padding-right: 5em;
+  word-spacing: 12px;
+  font-weight: bold;
+  font-family: cursive;
+}
+.homepage{
+
+padding-top: 100px;
+padding-left: 29em;
+padding-right: 21em;
+color: black!important;
+}
+body{
+  background-color: #1c754b;
+  width: auto;
+}
+a:hover{
+background-color: #9fa1a5;
+font-style: oblique;
+text-decoration: none;
+}
+/*About page*/
+img{
+
+
+  padding-top: 40px;
+  padding-left: 3em;
+  padding-right: 40em;
+}
+.intro{
+  padding-top: 50px;
+}
+
+.intro ul {
+  padding-left: 40px;
+}
+
+.intro ul li {
+  padding-left: 10px;
+}
+.hide {
+  display: none;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+    $(document).ready(function(){
+      $(".about").click(function(){
+        $(".admin-about").removeClass("hide");
+        $(".herounit").addClass("hide");
+      });
+      $(".home").click(function(){
+        $(".admin-about").addClass("hide");
+        $(".herounit").removeClass("hide");
+      });
+    });
+  </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <nav>
+          <a href="" class="home" style="font-size: 25px; color: black;">home</a>
+          <a href="" class="about" style="font-size: 25px; color: black">about</a>
+          <a href="" class="works" style="font-size: 25px; color: black">works</a>
+          <a href="" class="resume" style="font-size: 25px; color: black">resume</a>
+          <a href="" class="blog" style="font-size: 25px; color: black">blog</a>
+          <a href="" class="contact" style="font-size: 25px; color: black">conact</a>
+        </nav>
+      </div>
+      <div class="herounit">
+        <div class="homepage" style="text-align: center; position: fixed;">
+          <h1 style="font-family: Arial black; font-weight: bold; font-size: 80px;" class="text-center">Hello World!</h1>
+          <p style="font-size: 20px;">If you're looking for <strong>Katherina</strong> ,then you are at the right place.</p>
+        </div>
+      </div>
+      <div class="admin-about hide" style="position:fixed;">
+        <div class="container-fluid">
+        	<div class="row">
+        		<div class="col-md-6">
+              <img src="img/iamge.png">
+        		</div>
+        		<div class="col-md-6  intro">
+
+<h1 style="font-weight: bold; color: black;">I am,</h1>
+              <ul>
+                <li>slow cubis</li>
+                <li>grave yard public</li>
+                <li>murderer</li>
+              </ul>
+              <h1 style="font-weight: bold; color: black;">I love,</h1>
+              <ul>
+                <li>coffee</li>
+                <li>cadberry</li>
+                <li>human blood</li>
+              </ul>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
